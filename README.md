@@ -225,7 +225,7 @@ for persistent storage and a secret for the password.
 
 The [PrestaShop image](https://hub.docker.com/prestashop/prestashop/) accepts the
 database hostname through the environment variable
-`WORDPRESS_DB_HOST`. We set the env value to the name of the MySQL
+`DB_SERVER`. We set the env value to the name of the MySQL
 service we created: `prestashop-mysql`.
 
 The PrestaShop service has the setting `type: LoadBalancer`.  This will
