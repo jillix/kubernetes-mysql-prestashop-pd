@@ -43,6 +43,11 @@ spec:
       containers:
       - image: prestashop/prestashop:latest
         name: prestashop
+        resources:
+            requests:
+                cpu: "50m"
+            limits:
+                cpu: "50m"
         env:
         - name: DB_SERVER
           value: prestashop-mysql
